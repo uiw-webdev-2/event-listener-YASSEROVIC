@@ -4,14 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events Aplenty</title>
-
     <script src="script.js" defer></script>
+    <style>
+      body {
+        background-color: bisque;
+        margin: auto;
+        max-width: 500px;
+        margin-top: 10%;
+      }
+#buttonEdit {
+  visibility:hidden;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button4 {
+  background-color: #e7e7e7;
+  color: black;
+  border: 4px solid #f44336;
+}
+
+.button4:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+    </style>
   </head>
   <body>
     <main>
       <article class="container">
-        <h1>Events: A Demonstration</h1>
-        <button class="cta-button">Click me!</button>
+        <h1>Please type your name</h1>
+        <input type="text" id="formName" value="">
+        <br>
+        <br>
+        <button id="myButton" type="button">Alert my Name!</button>
+        <br>
+        <br>
+        <button class= "button4" id="buttonEdit" type="button">Edit Name</button>
+
       </article>
     </main>
   </body>
